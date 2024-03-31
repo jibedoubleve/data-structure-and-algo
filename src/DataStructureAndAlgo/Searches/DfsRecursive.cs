@@ -4,18 +4,18 @@ public static class DfsRecursive
 {
     public static void Explore(IReadOnlyList<List<int>> graph, Action<int> handler)
     {
-        var marked = new bool[graph.Count];
-        Explore(graph, 0, handler, marked);
+        var visitRegistry = new bool[graph.Count];
+        Explore(graph, 0, handler, visitRegistry);
     }
 
-    private static void Explore(IReadOnlyList<List<int>> graph, int index, Action<int> handler, bool[] marked)
+    private static void Explore(IReadOnlyList<List<int>> graph, int index, Action<int> handler, bool[] visitRegistry)
     {
         var nodes = graph[index];
-        marked[index] = true;
+        visitRegistry[index] = true;
         handler(index);
 
         foreach (var current in nodes)
-            if (marked[current] == false)
-                Explore(graph, current, handler, marked);
+            if (visitRegistry[current] == false)
+                Explore(graph, current, handler, visitRegistry);
     }
 }
