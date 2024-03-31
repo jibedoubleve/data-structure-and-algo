@@ -15,10 +15,10 @@ Rule("[red]DFS Algorithms[/]");
 var tree = new List<int>[]
 {
     [1, 2], // 0
-    [0, 3], // 1
-    [0, 3], // 2
-    [4, 2], // 3
-    [3]     // 4
+    [3],    // 1
+    [3],    // 2
+    [4],    // 3
+    []      // 4
 };
 AnsiConsole.MarkupLine("[red]Recursive. [/]");
 Execute(t => DfsRecursive.Explore(t, i => AnsiConsole.Write($"{i} ")), tree);
