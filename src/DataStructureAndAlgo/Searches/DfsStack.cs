@@ -11,6 +11,8 @@ public abstract class DfsStack
         while (stack.Count > 0)
         {
             var current = stack.Pop();
+            if(marked[current]) continue;
+            
             marked[current] = true;
             handler(current);
 
