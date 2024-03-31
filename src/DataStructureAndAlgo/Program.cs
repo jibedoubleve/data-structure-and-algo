@@ -26,6 +26,12 @@ Execute(t => DfsRecursive.Explore(t, i => AnsiConsole.Write($"{i} ")), tree);
 AnsiConsole.MarkupLine("[red]Stack. [/]");
 Execute(t => DfsStack.Explore(t, i => AnsiConsole.Write($"{i} ")), tree);
 
+//----------------------------------------------------------------------------------------------------------------------
+//---- BREADTH FIRST SEARCH (DFS)
+//----------------------------------------------------------------------------------------------------------------------
+Rule("[red]BFS Algorithm[/]");
+Execute(t => BfsQueue.Explore(t, i => AnsiConsole.Write($"{i} ")), tree);
+
 
 //----------------------------------------------------------------------------------------------------------------------
 // ---- SEARCH ALGORITHMS
