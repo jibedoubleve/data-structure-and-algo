@@ -9,8 +9,11 @@ This is a page where I'm testing and learning some algorithm.
 	* Recursive version
 * BFS (Breadth First Search)
 	* Implementation with `Queue`
-* Binary Searcj
-* Bubble sort
+* Binary Search
+* Sort
+	* Bubble sort
+	* Quick sort
+	* Counting sort
 * Fibonacci Sequence
 	* Recursive Implementation
 	* Implementation with `Queue`
