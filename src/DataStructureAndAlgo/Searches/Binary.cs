@@ -11,8 +11,8 @@ public static class Binary
         {
             if (find == orderedVector[mid]) return mid;
 
-            if (find > orderedVector[mid]) start = mid + 1;
-            else end = mid - 1;
+            if (find > orderedVector[mid]) start = mid+1;
+            else end = mid-1;
 
             mid = start + (end - start) / 2;
         }
